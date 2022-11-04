@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>Birthday Wish..🎂🎂</title>
+    
+   <!--link rel="preload" as="image" type="image/png" href="font.png" >
+    <link rel="preload" as="image" type="image/png" href="1.png" >
+    -->  
+    <link rel="preload" as="audio" type="audio/mpeg" href="song.mp3">
+    <link rel="preload" as="audio" type="audio/mpeg" href="bg.mp3">
+    <link rel="preload" href="style.css" type="text/css" /> 
+    
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  </head>
+  <body id="body" onload="Myfunction()">
+     
+    <audio hidden id="bg" loop src="bg.mp3"></audio>
+    <audio id="song" hidden loop src="song.mp3"></audio>
+    <div id="load">
+      <div class="circle">
+      </div>
+    </div>
+    <div id="container">
+      
+    	<div onclick="Myaudio()" class="card">
+		<div class="imgBox">
+			<div class="bark"></div>
+			<img oncontextmenu="return false" src="font.png">
+		</div>
+		<div class="details">
+			<h4 class="color1">Birthday Card</h2>
+			<h4 class="color2 margin">(HAPPY BIRTHDAY)</h3>
+			
+			<p>Dear Friend,</p>
+			<p>you are really amazing.</p>
+			<p>you are honest, truthfull</p>
+			<p>hardworking, practical </p>
+			<p>innovator, day sleeper</p>
+			<p>I hope this is the beginning,</p>
+			<p>of the best year ever!</p>
+			
+			<p class="text-right">Happy Birthday,<b style="color:#C0392B">Jannatul Ferdous Asha!</b></p>
+			
+		<p class="text-left"><b>❤shamim</b></p>
+		   
+		    <img oncontextmenu="return false" id="pic" src="1.png" />
+		</div>
+	</div>
+    </div>
+	<script type="text/javascript" charset="utf-8">
+	  var preload = document.getElementById('load');
+	  var body = document.getElementById('body');
+	  var Main = document.getElementById('container');
+	  var audio = document.getElementById('song');
+	  var bg = document.getElementById('bg');
+	  
+    function Myfunction(){
+	    preload.style.display= 'none';
+	    Main.style.display= 'block';
+	    body.style.background= '#FDE3A7';
+	    setTimeout(()=>{
+	      bg.play();
+	    },10);
+	  }
+	  function Myaudio(){
+      audio.play();
+      bg.currentTime=0;
+      bg.pause();
+	  }
+	</script>
+  </body>
+</html>
